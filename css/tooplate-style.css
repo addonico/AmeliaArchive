@@ -5,7 +5,35 @@ Template 2097 Pop
 https://www.tooplate.com/view/2097-pop
 
 */
+a {
+  margin-bottom: 10px;
+}
+h4 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 
+  font-weight: bold;
+}
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+}
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+}
+img {
+  margin-bottom: 20px;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -77,9 +105,10 @@ p {
 }
 
 .tm-site-header-col {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(40px);
   display: flex;
   align-items: center;
+  border-radius: 20px;
 }
 
 .tm-site-header {
@@ -102,6 +131,7 @@ p {
 }
 
 .tm-nav-link {
+  border-radius: 20px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -133,6 +163,7 @@ p {
 .product:hover {
   background: #2c2a35;
   color: #a9a9a9;
+  border-radius: 20px;
 }
 
 .tm-nav-icon {
