@@ -625,30 +625,350 @@ https://www.tooplate.com/view/2097-pop
                           <!-- 4 ----------------------- -->
                           <div class="item">
                             <h4>Fourth Step: Metadata Alignment</h4>
-                            <img
-                              src="img/t1.jpg"
-                              alt="The fun of it"
-                              width="800"
-                              height="500"
-                            />
-                            <img
-                              src="img/t2.jpg"
-                              alt="The fun of it"
-                              width="800"
-                              height="500"
-                            />
-                            <img
-                              src="img/t3.jpg"
-                              alt="The fun of it"
-                              width="800"
-                              height="500"
-                            />
-                            <img
-                              src="img/t4.jpg"
-                              alt="The fun of it"
-                              width="800"
-                              height="500"
-                            />
+                           <button style= "color:white; background-color: transparent; border: 0;" onclick="showTable('Who')"> Who </button>
+<button style= "color:white; background-color: transparent; border: 0; " onclick="showTable('Where')"> Where </button>
+<button style= "color:white;background-color: transparent; border: 0; " onclick="showTable('When')"> When </button>
+<button style= "color:white; background-color: transparent; border: 0;" onclick="showTable('What')"> What </button>
+
+<table n="1", id="Who" style="display:block; width: 100%; border-collapse:collapse; background-color: transparent; color: white">
+        <tr style="border-bottom: 1px solid white; border-top: 1px solid white;">
+            <th style="background-color: transparent; border-right: 1px solid white;" >#</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >Property</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >DC/DCTerms</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >MARC21</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >CCO</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >EDM</th>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">1</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Creator</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:creator</td>
+             <td style="background-color: transparent; border-right: 1px solid white">245$c</td>  
+             <td style="background-color: transparent; border-right: 1px solid white"> Creator Display (Role)</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcCreator</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">2</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Contributor</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:contributor</td>
+             <td style="background-color: transparent; border-right: 1px solid white">040</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Creator Display, Creator Extent</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:contributor</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">3</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Publisher</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:publisher</td>
+             <td style="background-color: transparent; border-right: 1px solid white">260$b</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Creator Display (Role)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcPublisher</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">4</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Owner</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">561 </td>  
+             <td style="background-color: transparent; border-right: 1px solid white">(Owner, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">5</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Vendor</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">938$a *</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">(Commissioner role, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+    </table>
+    
+    <table n="2" id="Where" style="display:none; width: 100%; border-collapse:collapse; background-color: transparent; color: white">
+        <tr style="border-bottom: 1px solid white; border-top: 1px solid white;">
+            <th style="background-color: transparent; border-right: 1px solid white;" >#</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >Property</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >DC/DCTerms</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >MARC21</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >CCO</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >EDM</th>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">1</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Place of publication</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:spatial</td>
+             <td style="background-color: transparent; border-right: 1px solid white">260$a</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:spatial</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">2</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Place of origin</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:spatial</td>
+             <td style="background-color: transparent; border-right: 1px solid white">534 (Original version note)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Creation Location</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:spatial</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">3</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Place</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:spatial</td>
+             <td style="background-color: transparent; border-right: 1px solid white">043 (Geographical Area Code), </br> 752(Hierarchical place Name)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Current Location</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">edmCountry</td>
+        </tr>
+    </table>
+    
+    <table n="3" id="When" style="display:none; width: 100%; border-collapse:collapse; background-color: transparent; color: white">
+        <tr style="border-bottom: 1px solid white; border-top: 1px solid white;">
+            <th style="background-color: transparent; border-right: 1px solid white;" >#</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >Property</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >DC/DCTerms</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >MARC21</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >CCO</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >EDM</th>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+             <td style="background-color: transparent; border-right: 1px solid white">1</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Creation date</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:created</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Display Date (Earliest|Latest| Qualifier: creation) </br>/ Creation date</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcDate, year</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+             <td style="background-color: transparent; border-right: 1px solid white">2</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Publication date</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:issued</td>
+             <td style="background-color: transparent; border-right: 1px solid white">260$c</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Display Date (Earliest| Latest)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">(dcterms:issued)</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">3</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Publication frequency</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:temporal</td>
+             <td style="background-color: transparent; border-right: 1px solid white">310 (Current publication frequency), </br> 321(Former publication frequency)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Display Date(Earliest| Latest)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:temporal</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">4</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Publication date of the web resource</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:issued</td>
+             <td style="background-color: transparent; border-right: 1px solid white">260$c</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcIssued, timestampCreated</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">5</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Date of the web resource's last update</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:temporal</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">timestampUpdate</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">6</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Biographical dates</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">100$d, 600$d</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Birth Date, Death Date</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">rdaGr2:dateOfBirth,</br> rdaGr2:dateOfDeath</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">7</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Coverage</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:coverage</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Display Date (Earliest| Latest)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcCoverage</td>
+        </tr>
+        
+    </table>
+    <table id="What" style="display:none; width: 100%; border-collapse:collapse; background-color: transparent; color: white">
+        <tr style="border-bottom: 1px solid white; border-top: 1px solid white;">
+            <th style="background-color: transparent; border-right: 1px solid white;" >#</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >Property</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >DC/DCTerms</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >MARC21</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >CCO</th>
+            <th style="background-color: transparent; border-right: 1px solid white;" >EDM</th>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">1</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Title</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:title</td>
+             <td style="background-color: transparent; border-right: 1px solid white">130 (Main entry-Uniform Title), </br>245$a, $b (Title statement)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Title</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dc:title</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">2</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Alternative title</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:alternative</td>
+             <td style="background-color: transparent; border-right: 1px solid white">222(Key title)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Title (Title type: alternate)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:alternative</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">3</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Name</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">100$a (Main Entry-Personal Name), </br> 600$a</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Name</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">foaf:name</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">4</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Type</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:type</td>
+             <td style="background-color: transparent; border-right: 1px solid white">082(DDC number),651, </br> 655(Index Term-Genre/form),336</td>  
+             <td style="background-color: transparent; border-right: 1px solid white"> Work Type</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcType</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">5</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Language</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:language</td>
+             <td style="background-color: transparent; border-right: 1px solid white">546</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Language</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcLanguage</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">6</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Materials</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:medium</td>
+             <td style="background-color: transparent; border-right: 1px solid white">338(Carrier type)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Materials and Techniques display </br>(Material)</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:medium</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">7</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Dimensions</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:format</td>
+             <td style="background-color: transparent; border-right: 1px solid white">3xx Physical Description</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Measurements display (Value| Unit| Type)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcFormat</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">8</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Provenance</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:provenance</td>
+             <td style="background-color: transparent; border-right: 1px solid white">361</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Former Locations Display; </br> (Provenance Description, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:provenance</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">9</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Source of data</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:source, dc:contributor</td>
+             <td style="background-color: transparent; border-right: 1px solid white">588</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Source</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">edmDataProvider, edmProvider, </br>dcSource</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">10</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Identifier</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:identifier</td>
+             <td style="background-color: transparent; border-right: 1px solid white">001, 010, 016, 019, 022,</br> 029, 050, 938$b, $n</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">(Current Location: Repository </br>Numbers, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcIdentifier</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">11</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Description</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:description</td>
+             <td style="background-color: transparent; border-right: 1px solid white">300$b (Physical description, </br>Other physical details)</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Description Field</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dc:description</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">12</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Extent</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:extent</td>
+             <td style="background-color: transparent; border-right: 1px solid white">300$a</td>  
+             <td style="background-color: transparent; border-right: 1px solid white"> Measurements Display </td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:extent</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">13</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Subject</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:subject</td>
+             <td style="background-color: transparent; border-right: 1px solid white">520, 650$a</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Subject Display </br>(Controlled Subject| Extent| Subject Type)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcSubject</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">14</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Rights</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:rights</td>
+             <td style="background-color: transparent; border-right: 1px solid white">540</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">(Copyright/Restrictions, CDWA) </td>
+             <td style="background-color: transparent; border-right: 1px solid white">edmRights, dcRights</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">15</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Note</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">500, 515</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Note</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">skos:note</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">16</tb>
+             <td style="background-color: transparent; border-right: 1px solid white">Additional form available</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:hasFormat</td>
+             <td style="background-color: transparent; border-right: 1px solid white">530, 776</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:hasFormat</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">17</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Additional edition</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:hasVersion</td>
+             <td style="background-color: transparent; border-right: 1px solid white">775</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:hasVersion</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">18</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Related resource</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dc:relation</td>
+             <td style="background-color: transparent; border-right: 1px solid white">780,785</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">Class; (Related Works, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">dcRelation</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">19</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Electronic location</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">856</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">(Related Visual Documentation, CDWA)</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white;">
+             <td style="background-color: transparent; border-right: 1px solid white">20</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Required Media</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">337</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">21</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Summary</td>
+             <td style="background-color: transparent; border-right: 1px solid white">dcterms:abstract</td>
+             <td style="background-color: transparent; border-right: 1px solid white">008, 520</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+        <tr style="border-bottom: 1px solid white; ">
+             <td style="background-color: transparent; border-right: 1px solid white">22</td>
+             <td style="background-color: transparent; border-right: 1px solid white">Responsibility</td>
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+             <td style="background-color: transparent; border-right: 1px solid white">245$c</td>  
+             <td style="background-color: transparent; border-right: 1px solid white">/</td> 
+             <td style="background-color: transparent; border-right: 1px solid white">/</td>
+        </tr>
+</table>
                             <p>
                               Then we compare these different standards and
                               standardize descriptions into a unified format. In
@@ -807,5 +1127,15 @@ https://www.tooplate.com/view/2097-pop
         $('.tm-current-year').text(new Date().getFullYear()); // Update year in copyright
       });
     </script>
+    <script>
+    function showTable(tableId)
+    {
+            var tables = ['Who', 'Where', 'When', 'What'];
+            tables.forEach(function(id) {
+                document.getElementById(id).style.display = (id === tableId) ? 'block' : 'none';
+            });
+        }
+         
+</script>
   </body>
 </html>
