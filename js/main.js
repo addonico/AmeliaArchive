@@ -104,7 +104,7 @@
 			this.setCarousel();
 
 			// 获取所有按钮
-			const buttons = document.querySelectorAll('.custom-button-1');
+			const buttons = document.querySelectorAll('.custom-button');
 
 			// 为每个按钮添加点击事件监听器
 			buttons.forEach(button => {
