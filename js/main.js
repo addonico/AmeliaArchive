@@ -53,11 +53,11 @@
 				detailsBgRect: d
 			};
 		}
-		open(data) {
-			if(this.isAnimating) return false;
+				open(data) {
+			if (this.isAnimating) return false;
 			this.isAnimating = true;
 
-			this.DOM.details.style.display = 'block';  
+			this.DOM.details.style.display = 'block';
 
 			this.DOM.details.classList.add('details--open');
 
@@ -67,62 +67,68 @@
 
 			const rect = this.getProductDetailsRect();
 
-			this.DOM.bgDown.style.transform = `translateX(${rect.productBgRect.left-rect.detailsBgRect.left}px) translateY(${rect.productBgRect.top-rect.detailsBgRect.top}px) scaleX(${rect.productBgRect.width/rect.detailsBgRect.width}) scaleY(${rect.productBgRect.height/rect.detailsBgRect.height})`;
-            this.DOM.bgDown.style.opacity = 1;
+			this.DOM.bgDown.style.transform = `translateX(${rect.productBgRect.left - rect.detailsBgRect.left}px) translateY(${rect.productBgRect.top - rect.detailsBgRect.top}px) scaleX(${rect.productBgRect.width / rect.detailsBgRect.width}) scaleY(${rect.productBgRect.height / rect.detailsBgRect.height})`;
+			this.DOM.bgDown.style.opacity = 1;
 
-            // animate background
-            anime({
-                targets: [this.DOM.bgDown],
-                duration: (target, index) => index ? 800 : 250,
-                easing: (target, index) => index ? 'easeOutElastic' : 'easeOutSine',
-                elasticity: 250,
-                translateX: 0,
-                translateY: 0,
-                scaleX: 1,
-                scaleY: 1,                              
-                complete: () => this.isAnimating = false
-            });
+			// animate background
+			anime({
+				targets: [this.DOM.bgDown],
+				duration: (target, index) => index ? 800 : 250,
+				easing: (target, index) => index ? 'easeOutElastic' : 'easeOutSine',
+				elasticity: 250,
+				translateX: 0,
+				translateY: 0,
+				scaleX: 1,
+				scaleY: 1,
+				complete: () => this.isAnimating = false
+			});
 
-            // animate content
-            anime({
-                targets: [this.DOM.description],
-                duration: 1000,
-                easing: 'easeOutExpo',                
-                translateY: ['100%',0],
-                opacity: 1
-            });
+			// animate content
+			anime({
+				targets: [this.DOM.description],
+				duration: 1000,
+				easing: 'easeOutExpo',
+				translateY: ['100%', 0],
+				opacity: 1
+			});
 
-            // animate close button
-            anime({
-                targets: this.DOM.close,
-                duration: 250,
-                easing: 'easeOutSine',
-                translateY: ['100%',0],
-                opacity: 1
-            });
+			// animate close button
+			anime({
+				targets: this.DOM.close,
+				duration: 250,
+				easing: 'easeOutSine',
+				translateY: ['100%', 0],
+				opacity: 1
+			});
 
-            this.setCarousel();
-// 获取所有按钮
-const buttons = document.querySelectorAll('.custom-button');
-// 为每个按钮添加点击事件监听器
-buttons.forEach(button => {
-console.log(button);
-button.addEventListener('click', function() {
-// 获取目标表格的ID
-const targetId = this.getAttribute('data-target');
-console.log('1');
-// 隐藏所有表格
-document.querySelectorAll('.table-container').forEach(table => {
-table.style.display = 'none';
-});
-// 显示目标表格
-const targetTable = document.getElementById(targetId);
-if (targetTable) {
-targetTable.style.display = 'block';
-}
-});
-});
-            window.addEventListener("resize", this.setCarousel);
+			this.setCarousel();
+
+			// 获取所有按钮
+			const buttons = document.querySelectorAll('.custom-button-1');
+
+			// 为每个按钮添加点击事件监听器
+			buttons.forEach(button => {
+				button.addEventListener('click', function () {
+					// 获取目标表格的ID
+					const targetId = this.getAttribute('data-target');
+
+					// 隐藏所有表格
+					document.querySelectorAll('.table-container').forEach(table => {
+
+						// targetTable.style.display = 'block';
+
+						if (table.getAttribute('data-target') !== targetId) {
+							table.style.display = 'none';
+						} else {
+							table.style.display = 'block';
+						}
+					});
+				});
+			});
+
+			window.addEventListener("resize", this.setCarousel);
+
+
 		}
 		close() {
 			if(this.isAnimating) return false;
