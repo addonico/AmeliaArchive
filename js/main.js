@@ -102,7 +102,26 @@
             });
 
             this.setCarousel();
-
+// 获取所有按钮
+const buttons = document.querySelectorAll('.custom-button-1');
+// 为每个按钮添加点击事件监听器
+buttons.forEach(button => {
+console.log(button);
+button.addEventListener('click', function() {
+// 获取目标表格的ID
+const targetId = this.getAttribute('data-target');
+console.log('1');
+// 隐藏所有表格
+document.querySelectorAll('.table-container').forEach(table => {
+table.style.display = 'none';
+});
+// 显示目标表格
+const targetTable = document.getElementById(targetId);
+if (targetTable) {
+targetTable.style.display = 'block';
+}
+});
+});
             window.addEventListener("resize", this.setCarousel);
 		}
 		close() {
