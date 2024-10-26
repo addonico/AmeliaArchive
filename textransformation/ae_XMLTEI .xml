@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns= "http://www.tei-c.org/ns/1.0">
+<?xml-model
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"
+  type="application/xml"?>
+<teiHeader>
+       <fileDesc>
+         <titleStmt>
+             <title> "Give women a chance in the air, pleads Amelia Earhart", a digital snippet</title> 
+             <author>Eve Garrete Grady</author> 
+             <respStmt> 
+                 <resp>Compiled by</resp>
+                 <name></name>
+             </respStmt>
+         </titleStmt>
+         <editionStmt> 
+             <edition n="1">Private edition for educational purposes,<date>October 2024</date></edition>
+             <respStmt>
+                 <resp>Annotated by</resp>
+                 <name></name>
+             </respStmt>   
+         </editionStmt>
+         <publicationStmt> 
+             <publisher></publisher>
+             <pubPlace>Bologna</pubPlace>
+             <date>October 2024</date>
+             <idno></idno>
+             <availability>
+                 <licence></licence>
+                 <p>This work was realized as a part of an university's exam; the current writer owns the right only to their work.</p>
+             </availability>
+         </publicationStmt>
+         <sourceDesc>
+             <biblFull>
+                 <titleStmt>
+                     <title n="1"> Give Women a Chance in the Air, Pleads Amelia Earhart </title>
+                     <title n="2">Eternal Bogie of <q>"Feminine Nerves" Long Since Dispelled, Asserts Famous 
+                        Airwoman, and Fair Sex Entitled to More Opportunity  in the Sky.</q></title> 
+                     <author> by <name type="person"> Eve Garrette Grady </name></author>
+                </titleStmt>
+                <publicationStmt>
+                    <publisher>Evening star</publisher>
+                    <pubPlace> Washington D.C.</pubPlace>
+                    <date when="1929-09-22">September 22, 1929</date>
+                </publicationStmt>
+             </biblFull>
+         </sourceDesc> 
+     </fileDesc>
+      <encodingDesc>
+             <projectDesc>
+                 <p>This work is part of a three-steps project, aiming at testing the student proficiency in XML, TEI, HTML, RDF and XSLT transformations</p>
+             </projectDesc>
+             <editorialDecl>
+                 <correction>
+                     <p>No corrections were made to the original text</p>
+                 </correction>
+                 <normalization>
+                     <p>No normalizations were made to the originalt text</p>
+                 </normalization>
+             </editorialDecl>
+         </encodingDesc>
+ </teiHeader>
+ <text xml:lang= "eng">
+     <body>
+         <div xml:id= "ttl"> 
+             <head n="3"> <hi rend="italic">Give Women a Chance  in the Air, Pleads  Amelia Earhart </hi> </head> 
+             <head n="2"> <hi rend="italic">Eternal Bogie of <q>"Feminine Nerves" </q> Long  Since Dispelled, Asserts Famous  Airwoman,  and Fair Sex Entitled to More Opportunity  in the Sky.</hi></head> 
+             <head n="1"> <hi> By Eve Garrette Grady.</hi></head> 
+         </div>
+         <cb n="1"/>
+         <div xml:id="content">
+         <div n="1">
+            <p> Are women being discriminated againts  in aviation? Is society pushing men  forward and holding women back  in the great modern conquest of the air? <name type="person">Miss Amelia Earhart</name>, the first woman  to fly the <rs type="place">Atlantic</rs> and perhaps best qualified  to speak authoritatively in behalf of her sex,  says emphatetically that they are. Despite the fact that women are rapidly overcoming the  inbred timidities which civilization has imposed upon them, despite their widespread interest in flying and the future it holds for  them, they are still bound by the chains of  artificial difference between the sexes. She says: </p>
+            <p> "Women can qualify in the air as in any  other sport. their influence and approval are  vital to the success of commercial aviation.  Women and girls write to me by the thousands  to learn the truth about aviation and what  women's chances are. there is nothing in  woman's make-up which would make her inferior to a man as an air pilot. The only  barrier to her swift success is her lack of opportunity to receive proper training.</p>
+            <p>" Society has imposed unjust distinctions in  the education of the sexes. Regardless of a  woman's natural inclinations and talents, she  has been assigned summarily to certain prescribed courses of study in public and private  schools. Sewing and domestic science are made  compulsory for schoolgirls whose propensities  are wholly in the direction of things mechancal. Women have an abysmal ignorance of  mechanics and enginerring through no fault  of their own</p>
+            <p> However, the importance which mechanical  labor-saving devices have assumed in the  average American home is beginning to open  the eyes of even the most helplessy feminine woman. She is beginning to realize that to  keep in tune with the march of modern prog-ress she must have some very definite mechanical knowledge.</p> 
+            <p>" She realizes that it is important to her  comfort, her efficiency as a worker and a  buyer that she learn what makes the wheels  go round. It is my firm belief that the woman's  interest in aviation- backed by the strong opinions of an air-minded generation of school-girls- will bring this question of unfair and unjust discrimination between the sexes as regards education with reference to vocational  aptitude directly into the open and definitely  burn away fallacious barriers." </p>
+         </div>
+         <div n="2">
+            <p><name type="person">Miss Earhart</name> strode up and down the  office, her hands boyishly thrust deep in  the pockets of her trim tween suit. I had  found her at the trophy-cluttered desk of her  publisher, <name type="person">George Palmer Putnam</name>, performing one of the duties of a celebrity and an author,  reading huge piles of fan mail.</p>
+            <p> <rs type="person"> The aviatrix </rs> is tall and slender and wears  clothes with distinction. She has the unaFfected simplicity of a real person and a disarming, friendly smile. She prefers a coat of  tan and a few freckles to rouge and lipstick. One hates to be banal, particularly since her  praises have been sung from coast to coast,  but it must be set down as my firm conviction  that no description of <name type="person"> Amelia Earhart</name> is ade-quate without the statement that she represents  that which we like to think of as best and  truest in our women. In other words, Amer - ica's <q>"first woman flyer"</q> is the real thing.</p>
+            <p>"Commercial aviation is a bustling industry,  but at the present it is making little or no effort  to enable women to secure the training and experience required of an industrial pilot on one of the regular airways," she said.</p>
+            <p>"The <rs type="org">Army</rs> and <rs type="org">  Navy</rs> training schools, which  are among the best, are, of course, closed to women. Some of the large transportation companies conduct their own schools for pilots. They are eccellent, but there, too, women are  barred.</p>
+            <p>"Sooner of later the big air lines must enlist  women's intelligent co-operation, because with- out them aviation cannot hope for success. One has only to study the history of the automobile industry to recognize the truth of what  I am saying.</p>
+            <p>" Twenty years ago the idea that woman  could learn to drive automobiles was considered  preposterous. The eternal bogies, feminine nerves and physical wakness, were advanced  as final and conclusive arguments when all others failed. And strangely enough, today,  in the face of superlative proof to the contrary, one sees these same threadbare, bromidic arguments solemnly dusted off and brought  forth again to be used against women aviators." <name type="person">Miss Earhart</name> smiled.</p>
+            <p n="12a">"I doubt if men will ever believe that there  is no such thing as feminine nerves as opposed  to nerves of the masculine variety. Yet, if anything, wirtually all of woman's experience  and training has been of the sort to give her nerves of iron.</p>           
+         </div>
+         <cb n="2"/>
+         <div n="2">
+            <p n="12b"> No Man could endure for a  half hour what is just part of a day's work to  a woman- cooking a dinner with one hand,  rocking a cradle with the other, at he same  time keeping a watchful eye on sonny and sister, who are probably very much underfoot.  Certainly the performance of young business  women in our great cities is a daily tribute to their ability to thrive under the tension of  noise, big business and high-pressure work."</p>
+            <p><name type="person">Miss Earhart</name> has noted a growing interest  in aviation on the part of sportswomen  throughout <rs type="place">America</rs>.</p>
+            <p>"The woman who likes to play a good game  of golf or enjoys riding to the hounds has  found flying one of the most enthralling of allsports. Now tha manufacturers are marketing little sport planes with light engines- particularly easy for a woman to handle- aviation  country clubs are springing up everywhere. It  is only a question of time untile woman golf  teams will adopt travel by air from one country  club to another for competitive matches as a  matter of course. It should prove to be a  highly advantageous mode of traveling for  tournament player of a great deal of the last-minute tension and nervousness which trans-portation by train or automobile aggravates.</p>
+            <p n="15a">"Since the opening of the <name type="org">Transcontinental Air Transport Service</name>, traveling by plane has begun to have a tremendous vogue among</p>
+         </div>
+         </div>
+         <div xml:id="container">
+            <p n="16"> <media mimeType="image" url="notdefined"/><hi rend="italic"><name type="person">Ruth Elder</name>, of transatlantic fame, and one of the leaders among women pilots.</hi></p>             
+         </div>
+         <div xml:id="content_2">
+         <div n="4">
+            <p n="15b">women. The cleanliness of traveling by plane  instantly appearl to them- no dirt, no cinders, no mussy, disheveled clothers. Women are innately fastidious, you know. They are also  attracted by the friendliness of air traveling.  Plane passengers consider that they have a  common bond of experience. They waive the  customary formalities of the more earthy means of transportation. It all becomes much more interesting; at least, the women think so.</p>
+        </div>
+        </div>
+     </body>
+ </text>
+</TEI>

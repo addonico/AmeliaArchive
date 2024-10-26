@@ -1,0 +1,29 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://addonico.github.io/AmeliaArchive/item/1929Interview> fabio:hasPublicationDate "September 22, 1929" ;
+    fabio:hasPublisher <http://addonico.github.io/AmeliaArchive/item/EveningStar> .
+
+<http://addonico.github.io/AmeliaArchive/item/1929Interview/html-article> dc:date "October 2024" ;
+    foaf:name " \"Give women a chance in the air, pleads Amelia Earhart\", a digital snippet" .
+
+<http://example.org/19df2f67cf07401dd503ab29b03b2b9a> a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/3304149/> ;
+    foaf:name "George Palmer Putnam" .
+
+<http://example.org/75dcd21d1ad1037668419007efa8e5f1> a foaf:Organization ;
+    foaf:name "Transcontinental Air Transport Service" .
+
+<http://example.org/93386ab834798c1c7cc76f8a21504da7> a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/75751987/> ;
+    foaf:name "Ruth Elder" .
+
+<http://example.org/adb9d3cf51e0d16e38e4d298da1ba45b> a foaf:Person ;
+    owl:sameAs <https://viaf.org/viaf/59886046/> ;
+    foaf:name " Amelia Earhart" .
+
+<http://example.org/f54a3191d7bad3242f425b67ca46a526> a foaf:Person ;
+    foaf:name " Eve Garrette Grady " .
+
