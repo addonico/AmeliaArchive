@@ -1093,6 +1093,16 @@ https://www.tooplate.com/view/2097-pop
       </div>
       <!-- .tm-main-content -->
     </div>
+     <script>
+    function showTable(tableId)
+    {
+            var tables = ['Who', 'Where', 'When', 'What'];
+            tables.forEach(function(id) {
+                document.getElementById(id).style.display = (id === tableId) ? 'block' : 'none';
+            });
+        }
+         
+</script>
     <!-- load JS -->
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <!-- https://jquery.com/ -->
@@ -1127,15 +1137,6 @@ https://www.tooplate.com/view/2097-pop
         $('.tm-current-year').text(new Date().getFullYear()); // Update year in copyright
       });
     </script>
-    <script>
-    function showTable(tableId)
-    {
-            var tables = ['Who', 'Where', 'When', 'What'];
-            tables.forEach(function(id) {
-                document.getElementById(id).style.display = (id === tableId) ? 'block' : 'none';
-            });
-        }
-         
-</script>
+   
   </body>
 </html>
