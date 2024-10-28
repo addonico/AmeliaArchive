@@ -70,6 +70,14 @@ https://www.tooplate.com/view/2097-pop
           'Please view this in a modern browser such as latest version of Chrome or Microsoft Edge.'
         );
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+    
   </head>
 
   <body>
@@ -1066,6 +1074,247 @@ https://www.tooplate.com/view/2097-pop
                               dataset, we have used the properties owl:sameAs,
                               foaf:isPrimaryTopicOf and SKOS:broader.
                             </p>
+                      <h3>
+                        RDF Production
+                      </h3>
+                        <pre><code>
+@base <http://addonico.github.io/AmeliaArchive/> .
+@prefix RiCO: <https://www.ica.org/standards/RiC/RiC-O_1-0-1.html#> .
+@prefix crm: <https://cidoc-crm.org/> .
+@prefix dbo: <https://www.dbpedia.org/about/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdaa: <https://www.rdaregistry.info/Elements/a/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sch: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <https://www.wikidata.org/wiki> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<item/Cover> a crm:E22 ;
+    dc:format "9 x 16.5 cm"^^xsd:string ;
+    dcterms:created "1935-05-8/9" ;
+    dcterms:medium wd:Q11472,
+        wd:Q127418,
+        wd:Q131790 ;
+    dcterms:type wd:Q170124 ;
+    fabio:hasCreator <person/AmeliaEarhart> ;
+    crm:P12i <event/1935NewarkToLA> ;
+    crm:P51 <or/NationalPostalM> ;
+    sch:name "Los Angeles-Mexico City-Newark flight cover" .
+
+<item/FlyingSuit> a crm:E22 ;
+    dc:type wd:Q56147900 ;
+    dcterms:created "1930"^^xsd:year ;
+    skos:broader wd:Q645292 ;
+    crm:P103i <or/NinetyNines> ;
+    crm:P51 <or/NationalMuseum> ;
+    crm:P69 <item/FlyingSuit/design> ;
+    crm:P92i </or/HendanSportswear> ;
+    crm:P94i <item/FlyingSuit/design> ;
+    sch:name "Ninety-Nines flying suit" .
+
+<item/Goggles> a crm:E22 ;
+    dc:format "3-D: 19.1*2.5*5.1cm"^^xsd:string ;
+    dcterms:created "1920s" ;
+    dcterms:medium wd:Q10651359,
+        wd:Q11427,
+        wd:Q11469 ;
+    dcterms:type wd:Q56147900 ;
+    crm:P12i <event/1929WomenNatDerby> ;
+    crm:P92i "Protector" ;
+    sch:name "Flying Goggles"^^xsd:string .
+
+<item/LastFlight> a wd:Q112983 ;
+    fabio:hasPublicationYear "1937"^^xsd:gYear ;
+    fabio:hasPublisher <or/HarcBraceCo> ;
+    fabio:hasTitle "Last Flight"^^xsd:string .
+
+<item/Picture1932> a sch:Photograph ;
+    dcterms:created "1932"^^xsd:year ;
+    dcterms:type wd:Q125191 ;
+    crm:P12i <event/SoloFlight> ;
+    crm:P51 "Bibliothèque nationale de France"^^xsd:string ;
+    crm:P62 <person/AmeliaEarhart>,
+        <person/GeorgePutnam> ;
+    sch:name "Arrivée d'Amélie Earhart et de son mari à Paris, aviatrice qui traversé l'Atlantique, son mari, M. Putnam" ;
+    RiCO:isAssociatedWithPlace <https://www.geonames.org/2988507/paris.html> .
+
+<item/TheFunOfIt> a fabio:book ;
+    dcterms:isVersionOf <item/TheFunOfIt#1932> ;
+    dcterms:type wd:Q112983 ;
+    fabio:hasCreator <person/AmeliaEarhart> ;
+    fabio:hasISBN "09158645689780915864560" ;
+    fabio:hasPublicationYear "1977"^^xsd:gYear ;
+    fabio:hasPublisher <or/HarcBraceCo> ;
+    fabio:hasTitle "The Fun of It"^^xsd:string ;
+    skos:broader wd:Q4184 ;
+    crm:P129 <event/Flight1928>,
+        <person/AmeliaEarhart> .
+
+<item/lockheedVega> a crm:E22 ;
+    dc:type wd:Q11436 ;
+    dcterms:created "1927-1929" ;
+    dcterms:medium wd:Q287 ;
+    crm:P12i <event/SoloFlight> ;
+    crm:P51 <or/NationalMuseum>,
+        <person/AmeliaEarhart> ;
+    crm:P921 <or/LockheedAircraftCompany> ;
+    crm:P94i <person/GeraldVultee>,
+        <person/JohnKNorthrop> .
+
+<person/WilhelmStultz> foaf:name "Wilmer Stultz"^^xsd:string ;
+    rdaa:P50120 "1929-07-01"^^xsd:date ;
+    rdaa:P50121 "1900-04-09"^^xsd:date .
+
+<event/1929WomenNatDerby> a crm:E7 ;
+    dcterms:date "1928" ;
+    skos:related wd:Q765633 ;
+    sch:fromLocation <https://www.geonames.org/5393212/santa-monica.html> ;
+    sch:toLocation <https://www.geonames.org/5150529/cleveland.html> .
+
+<event/1935NewarkToLA> a crm:E7 ;
+    dcterms:date "1935-04"^^xsd:gYearMonth ;
+    skos:related wd:Q765633 ;
+    crm:P14 <person/AmeliaEarhart> .
+
+<event/LindberghFlight> a crm:E7_Activity ;
+    dc:type wd:Q688615 ;
+    dcterms:date "1927-05"^^xsd:gYearMonth ;
+    skos:related wd:Q765633 ;
+    crm:P14 <person/CharlesLindbergh> .
+
+<item/1929Interview> a fabio:newspaperArticle ;
+    dcterms:type wd:Q5707594 ;
+    fabio:hasCreator <person/EveGGrady> ;
+    fabio:hasPublicationDate "1929-09-22"^^xsd:date ;
+    fabio:hasTitle "Give Women a Chance in the Air, Pleads Amelia Earhart"^^xsd:string ;
+    fabio:isPartOf <item/EveningStar> .
+
+<item/EveningStar> a fabio:newspaper ;
+    fabio:hasTitle "Evening Star"^^xsd:string ;
+    sch:spatial <https://www.geonames.org/4140963/washington.html> ;
+    sch:temporal "1874-1972" .
+
+<item/Friendship> a wd:Q11436 ;
+    sch:name "Friendship"^^xsd:string .
+
+<item/Medal1928> a crm:E22 ;
+    dc:format "3-D: 1.3 x 3cm" ;
+    dcterms:created "1920s-1930s" ;
+    dcterms:medium wd:Q7234589 ;
+    dcterms:type wd:Q618779 ;
+    crm:P129 <event/Flight1928> ;
+    crm:P51 <or/NationalMuseum> ;
+    crm:P92i "Whitehead-Hoag Co."^^xsd:string ;
+    sch:name "First Woman to Cross the Atlantic" .
+
+<item/Medal1932> a crm:E22 ;
+    dc:format "3-D: 0.4*6.2cm"^^xsd:string ;
+    dcterms:created "1932"^^xsd:gYear ;
+    dcterms:medium wd:Q34095 ;
+    dcterms:type wd:Q618779 ;
+    crm:P129 <event/SoloFlight> ;
+    crm:P53 <or/NationalMuseum> ;
+    crm:P92i "Medallic Art Company"^^xsd:string ;
+    sch:name "National Geographic Society Medal"^^xsd:string ;
+    dbo:awardedBy <person/president> .
+
+<item/Stamp> a crm:E22 ;
+    dc:type wd:Q37930 ;
+    dcterms:created "1963-07-24"^^xsd:date ;
+    dcterms:medium wd:Q11472,
+        wd:Q127418,
+        wd:Q131790 ;
+    crm:P51 <or/NationalPostalM> ;
+    crm:P62 <person/AmeliaEarhart> ;
+    sch:name "8c Amelia Earhart single"^^xsd:string .
+
+<item/TheFunOfIt#1932> fabio:hasPublicationYear "1932"^^xsd:gYear .
+
+<or/LockheedAircraftCompany> sch:founder <person/AllanHLockheed> ;
+    sch:foundingDate "1919"^^xsd:gYear .
+
+<person/CharlesLindbergh> a crm:E21 ;
+    owl:sameAs <https://viaf.org/viaf/17265891/#Lindbergh,_Charles_A._(Charles_Augustus),_1902-1974> ;
+    foaf:name "Charles Lindbergh" ;
+    rdaa:P50120 "1974-08-26"^^xsd:date,
+        "1977"^^xsd:gYear ;
+    rdaa:P50121 "1902-02-04"^^xsd:date,
+        "1902"^^xsd:gYear .
+
+<person/GeraldVultee> a crm:E21_Person ;
+    owl:sameAs <https://viaf.org/viaf/68141086/#Vultee,_Jerry,_1900-1938> ;
+    foaf:name "Jerry Vultee" .
+
+<person/JohnKNorthrop> a crm:E21_Person ;
+    owl:sameAs <https://viaf.org/viaf/search?query=local.names%20all%20%22John%20Northrop%22&sortKeys=holdingscount&recordSchema=BriefVIAF> ;
+    foaf:name "John Northrop" .
+
+<item/FlyingSuit/design> crm:P14 <person/AmeliaEarhart> .
+
+<or/HarcBraceCo> a crm:E74 ;
+    rdaa:P50037 "1919"^^xsd:gYear .
+
+<or/NinetyNines> a foaf:Organization ;
+    owl:sameAs <https://viaf.org/viaf/132517414/#Ninety-Nines_(Organization)> ;
+    foaf:name "Ninety-Nines"^^xsd:string ;
+    crm:P107 <person/RuthElder> ;
+    sch:foundingDate "1929-11"^^xsd:gYearMonth .
+
+<person/GeorgePutnam> owl:sameAs <https://viaf.org/viaf/3304149/> ;
+    foaf:name "George P. Putnam"^^xsd:string ;
+    RiCO:hasOrHadSpouse <person/AmeliaEarhart> ;
+    rdaa:P50120 "1950-01-04"^^xsd:date ;
+    rdaa:P50121 "1887-09-07"^^xsd:date .
+
+<person/RuthElder> a crm:E21 ;
+    owl:sameAs <https://viaf.org/viaf/75751987/#Elder,_Ruth,_1902-1977> ;
+    foaf:name "Ruth Elder" .
+
+<event/Flight1928> a crm:E7 ;
+    rdfs:label "First woman to fly as a passenger across the Atlantic"^^xsd:string ;
+    skos:related wd:Q765633 ;
+    crm:P14 <item/Stamp>,
+        <person/AmeliaEarhart> ;
+    crm:P16 <item/Friendship> .
+
+<event/SoloFlight> a crm:E7 ;
+    rdfs:label "First woman to fly solo across the Atlantic"^^xsd:string ;
+    dc:type wd:Q1416909,
+        wd:Q688615 ;
+    dcterms:date "1932-05-20"^^xsd:date ;
+    skos:related wd:Q765633 ;
+    crm:P14 <person/AmeliaEarhart> ;
+    crm:P15 <event/LindberghFlight> ;
+    sch:fromLocation <https://www.geonames.org/12873751/harbour-grace.html> ;
+    sch:toLocation <https://www.geonames.org/2651732/culmore.html> .
+
+<person/AmeliaEarhart> a crm:E21_Person ;
+    owl:sameAs <https://viaf.org/viaf/59886046/> ;
+    foaf:isPrimaryTopicOf <https://en.wikipedia.org/wiki/Amelia_Earhart> ;
+    foaf:knows <person/RuthElder> ;
+    foaf:name "Amelia Earhart"^^xsd:string ;
+    crm:P107i <or/NinetyNines> ;
+    crm:P11i <event/Flight1928> ;
+    RiCO:hasOrHadSpouse <person/GeorgePutnam> ;
+    rdaa:P50104 wd:Q2095549,
+        wd:Q3501317,
+        wd:Q36180 ;
+    rdaa:P50107 "1939-01-05"^^xsd:date ;
+    rdaa:P50121 "1897"^^xsd:gYear ;
+    rdaa:P50574 <item/1929Interview> ;
+    rdaa:P50627 <item/Medal1928>,
+        <item/Medal1932> .
+
+
+                          
+                        </code></pre>
+
+                  
                             <a style="padding-bottom: 20px" href="https://github.com/teresam2/proj">Github Repository</a>
                             <img
                               src="img/new_rdf_grapher.png"
