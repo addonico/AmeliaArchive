@@ -1,0 +1,9 @@
+Subject,Predicate,Object
+Ninety-Nines flying suit,crm:P94i was_created_by,the design of the jacket
+the design of the jacket,crm:P14 was_carried_out_by,Amelia Earhart
+Ninety-Nines flying suit,crm:P103i was_intended_for,Ninety-Nines' members
+Ninety-Nines flying suit,crm:P92i was_brought_into_existence_by,Hendan Sportswear
+Ninety-Nines flying suit,dcterms:created,ca. 1930
+Ninety-Nines flying suit,crm:P51 has_former_or_current_owner,National Air and Space Museum
+Ninety-Nines flying suit,dcterms:type,Personal equipment
+Ninety-Nines flying suit,schema:name,Ninety-Nines flying suit

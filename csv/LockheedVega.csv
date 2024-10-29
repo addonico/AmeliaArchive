@@ -1,0 +1,14 @@
+Subject,Predicate,Object
+ Lockheed Vega 5b,schema:name,Amelia's Earhart Lockheed Vega 5b
+ Lockheed Vega 5b,crm:P51 has_former_or_current_owner ,Amelia Earhart
+ Lockheed Vega 5b,crm:P92i was_brought_into_existence_by,Lockheed Aircraft Company
+ Lockheed Vega 5b,dcterms: type,Aircraft
+ Lockheed Vega 5b,crm:P51 has_former_or_current_owner,Amelia Earhart
+ Lockheed Vega 5b,crm:P51 has_former_or_current_owner,National Air and Space Museum
+ Lockheed Vega 5b,dcterms:created,1927-1929
+ Lockheed Vega 5b,dcterms:medium,Wooden monocoque and cantilever
+ Lockheed Vega 5b,dc:format,"Wingspan: 12.49 m; lenght: 8.38 m; height: 2.49 m; weight: empty 748 kg; gross: 1,315-1,450 kg"
+ Lockheed Vega 5b,crm:P12i was_present_at,New record: First woman to fly solo across the Atlantic
+ Lockheed Vega 5b,crm:P94i was_created_by,the design of the Lockheed Vega 5b
+the design of the Lockheed Vega 5b,crm:P14 was_carried_out_by,Jack Northrop
+the design of the Lockheed Vega 5b,crm:P14 was_carried_out_by,Gerald Vultee

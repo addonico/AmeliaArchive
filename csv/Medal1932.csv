@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+National Geographic Society Medal,schema:name,National Geographic Society Medal
+National Geographic Society Medal,dcterms:type,"Medal, Awards"
+National Geographic Society Medal,crm:P53 has_former_or_current_owner,National Air and Space Museum
+National Geographic Society Medal,dcterms:created,1932
+National Geographic Society Medal,crm:P92i was_brought_into_existence_by,Medallic Art Company
+National Geographic Society Medal,dcterms:medium,Bronze
+National Geographic Society Medal,dc:format,3-D: 0.4*6.2cm
+National Geographic Society Medal,crm:P129 is_about,New record: First woman fly solo across the Atlantic
+National Geographic Society Medal,dbo:awardedBy,President Herbert Hoover
+Amelia Earhart,rdaa:P50627 isDedicateePersonOfItem,National Geographic Society Medal

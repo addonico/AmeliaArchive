@@ -1,0 +1,10 @@
+Subject,Predicate,Object
+The Fun of It,fabio:hasTitle,The Fun of It
+The Fun of It,fabio:hasISBN, 09158645689780915864560
+The Fun of It,fabio:hasPublicationYear,1977
+The Fun of It,dcterms:type,"Book, memoir"
+The Fun of It,fabio:hasPublisher,"Harcourt, Brace and Company"
+The Fun of It,dcterms:isVersionOf,The Fun of it (1932)
+The Fun of It,fabio:hasCreator,Amelia Earhart
+The Fun of It,crm:P129 is_about,Amelia Earhart
+The Fun of It,crm:P129 is_about,First woman to fly across the Atlantic

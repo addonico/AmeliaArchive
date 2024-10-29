@@ -1,0 +1,10 @@
+Subject,Predicate,Object
+Amelia Earhart's Flight Goggles,schema: name,Amelia Earhart's Flight Goggles
+Amelia Earhart's Flight Goggles,crm: P92i was_brought_into_existence_by,Protector
+Amelia Earhart's Flight Goggles,dcterms: type,Personal Equipment
+Amelia Earhart's Flight Goggles,crm:P51 has_former_or_current_owner,Amelia Earhart
+Amelia Earhart's Flight Goggles,crm:P51 has_former_or_current_owner,National Air and Space Museum
+Amelia Earhart's Flight Goggles,dcterms:created,1920
+Amelia Earhart's Flight Goggles,dcterms:medium,"Steel, glass, and elastic"
+Amelia Earhart's Flight Goggles,dc:format,3-D: 19.1*2.5*5.1cm
+Amelia Earhart's Flight Goggles,crm:P12i was_present_at,1929 Women's National Air Derby

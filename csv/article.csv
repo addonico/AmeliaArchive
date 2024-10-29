@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+"Give Women a Chance in the Air, Pleads Amelia Earhart",fabio:hasTitle,"Give Women a Chance in the Air, Pleads Amelia Earhart"
+"Give Women a Chance in the Air, Pleads Amelia Earhart",fabio:hasCreator,Eve Garrette Grady
+"Give Women a Chance in the Air, Pleads Amelia Earhart",dcterms:type,Newspaper article
+"Give Women a Chance in the Air, Pleads Amelia Earhart",fabio:hasPublicationDate,"Semptember 22, 1929"
+"Give Women a Chance in the Air, Pleads Amelia Earhart",fabio:isPartOf,Newspaper
+Amelia Earhart,rdaa:P50574 isIntervieweePersonofExpressionOf,"Give Women a Chance in the Air, Pleads Amelia Earhart"
